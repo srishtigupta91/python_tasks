@@ -2,19 +2,9 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import re
 
-"""The driver.get method will navigate to a page given by the URL.
-WebDriver will wait until the page has fully loaded (that is, the “onload”
-event has fired) before returning control to your test or script. It’s worth
-noting that if your page uses a lot of AJAX on load then WebDriver may not know when
-it has completely loaded.:"""
-
-"""XPath is the language used for locating nodes in an XML document"""
-
-
-# ***************************************
 
 def get_avg(elements):
-    """gives the average value of ace% per player using selenium"""
+    """gives the average value of ace%, spw and rpw per player using selenium"""
 
     driver.get(url)
     driver.refresh()
@@ -70,8 +60,6 @@ def get_avg(elements):
 
 path = r"/home/srishti/Downloads/chromedriver"
 
-"""WebDriver is a tool for automating web application
-testing, and in particular to verify that they work as expected"""
 driver = webdriver.Chrome(path)
 url = 'http://www.tennisabstract.com/cgi-bin/player.cgi?p=KeiNishikori&f=&view=singles'
 print(url)
