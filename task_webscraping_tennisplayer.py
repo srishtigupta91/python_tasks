@@ -3,7 +3,7 @@ from selenium import webdriver
 import re
 
 
-def get_avg(elements):
+def get_avg(url):
     """gives the average value of ace%, spw and rpw per player using selenium"""
 
     driver.get(url)

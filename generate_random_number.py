@@ -1,6 +1,7 @@
 from time import time
 
 def get_seeds():
+    #generating random value from the current time period is given
     value_1 = value_2 = 0
     while not value_1 and not value_2:
         try:
@@ -11,9 +12,9 @@ def get_seeds():
 
 
 def validate_inputs(modulus, increment):
+    # check the validity of the relation
     relation = 0
     while not relation:
-        import pdb;pdb.set_trace()
         multiplier, seed = get_seeds()
 
         relation = 0 <= increment < modulus and 0 <= seed < modulus and multiplier in [1, 3, 7, 9]
@@ -22,6 +23,8 @@ def validate_inputs(modulus, increment):
 
 
 def generate(modulus, increment):
+    """generating multiplier and seed value and checking the
+    current iteration should not be 0 and seed value"""
     multiplier, seed = validate_inputs(modulus, increment)
     output = [seed]
     current_iteration = -1
