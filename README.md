@@ -14,6 +14,7 @@ ace percentage, serve point winning percentage and reverse point winning percent
 
 
 Task 3:
+
 Write a custom random number generation algo which should be 73% biased to the higher number. 
 Like if I want ‘a random number between 1 to 10’ 100 times then it should give ‘number more than 5’ 
 73 times and ‘less than 5’ 27 times. You’re not allowed to use any predefined random number generation
